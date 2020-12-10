@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StudentToStaff</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notification_title">notification</string>
+    <string name="hospital_title">Hospital</string>
+    <string name="contact_title">Contact</string>
+    <string name="stats_title">Stats</string>
+    <string name="chat_title">Chat</string>
+    <string name="location_title">Location</string>
+    <string name="in_cabin">In Cabin</string>
+    <string name="in_meeting">In Meeting</string>
+    <string name="in_lecture">In Lecture</string>
+    <string name="other">Other</string>
+</resources>

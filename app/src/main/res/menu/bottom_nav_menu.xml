@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/contact_to_faculty"
+        android:icon="@drawable/ic_contact"
+        android:title="@string/contact_title" />
+    <item
+        android:id="@+id/location_of_faculty"
+        android:icon="@drawable/ic_baseline_location_searching_24"
+        android:title="@string/location_title" />
+    <item
+        android:id="@+id/chat_with_faculty"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chat_title" />
+</menu>

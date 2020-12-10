@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "62329843002",
+    "firebase_url": "https://studenttostaff.firebaseio.com",
+    "project_id": "studenttostaff",
+    "storage_bucket": "studenttostaff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62329843002:android:80187209c32a246a3c3403",
+        "android_client_info": {
+          "package_name": "com.sameer.studenttostaff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62329843002-op84qk4sclvdt1kdeloq7f1gb67kcrmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR9YdSO8qHOO1jSIqJ9BALeVLufNcu1ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62329843002-op84qk4sclvdt1kdeloq7f1gb67kcrmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Fragment.FacLocationFragment">
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <RadioButton
+            android:id="@+id/in_cabin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Cabin"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/in_meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Meeting"
+            android:textSize="24sp" />
+
+
+        <RadioButton
+            android:id="@+id/in_lecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Lecture"
+            android:textSize="24sp" />
+
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Other"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="456dp"
+        android:background="#F44336"
+        android:text="Select Location:"
+        android:textColor="#0C0C0C"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/apply_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="147dp"
+        android:text="Apply" />
+
+</RelativeLayout>
