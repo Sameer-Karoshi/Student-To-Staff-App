@@ -5,7 +5,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -29,7 +28,7 @@ import java.util.List;
 public class StuLocViewFragment extends Fragment {
 
     private static final String TAG = "StuLocViewFragment";
-    private ProgressBar mProgress;
+   // private ProgressBar mProgress;
     private List<Faculty> mFacultyList;
 
     private RecyclerView mRecycler;
@@ -54,7 +53,7 @@ public class StuLocViewFragment extends Fragment {
         View mMainView =  inflater.inflate(R.layout.fragment_stu_loc_view, container, false);
 
         mRecycler = mMainView.findViewById(R.id.loc_recyler_view);
-        mProgress = mMainView.findViewById(R.id.fc_progress);
+        //mProgress = mMainView.findViewById(R.id.fc_progress);
 
 
         mFacultyList = new ArrayList<>();
@@ -82,7 +81,7 @@ public class StuLocViewFragment extends Fragment {
         mRecycler.setLayoutManager(new LinearLayoutManager(getActivity()));
 
 
-        //mProgress.setVisibility(View.VISIBLE);
+       // mProgress.setVisibility(View.VISIBLE);
 
 
         mAllUsersDatabase.child("Faculty").addValueEventListener(new ValueEventListener() {

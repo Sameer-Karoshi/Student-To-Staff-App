@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -18,10 +17,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.sameer.studenttostaff.FacultyObject.Faculty;
 import com.sameer.studenttostaff.R;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactViewHolder> {
@@ -49,7 +44,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
     public void onBindViewHolder(@NonNull ContactAdapter.ContactViewHolder holder, int position) {
 
 
-        boolean Flag = false;
+       /* boolean Flag = false;
 
 
         //--------------------------------------------------------------
@@ -63,7 +58,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
             calendar1.add(Calendar.DATE, 1);
 
 
-            String EndTime = "17:00:00";
+            String EndTime = "20:00:00";
             Date time2 = new SimpleDateFormat("HH:mm:ss").parse(EndTime);
             Calendar calendar2 = Calendar.getInstance();
             calendar2.setTime(time2);
@@ -85,6 +80,9 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
         }
 
         //-------------------------------------------------------------------------------------
+        Log.d("Sameer", "onBindViewHolder: "+Flag);
+
+        */
 
 
 
@@ -93,7 +91,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
         final Faculty faculty = mList.get(position);
         holder.mName.setText("  Prof." + faculty.getName());
         holder.mNumber.setText("  +91" + faculty.getContact_Number());
-        final boolean finalFlag = Flag;
+        //final boolean finalFlag = Flag;
         holder.mCall.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
@@ -111,19 +109,11 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
 
 
 
-
-
-
-                    if(finalFlag){
-
                         Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", faculty.getContact_Number(), null));
 
                         mContext.startActivity(intent);
 
-                    }
-                    else{
-                        Toast.makeText(mContext, "You Can Call In between 10 AM to 5 PM Only", Toast.LENGTH_SHORT).show();
-                    }
+
 
 
 

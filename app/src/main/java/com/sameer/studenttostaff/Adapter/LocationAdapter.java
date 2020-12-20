@@ -48,7 +48,7 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
         final Faculty faculty = mList.get(position);
         holder.mName.setText("Name: " + "  Prof." + faculty.getName());
         holder.mDepartment.setText("Department: "+faculty.getDepartment());
-        holder.mPost.setText("Post: "+"HOD");
+        holder.mPost.setText("Post: "+faculty.getPost());
         holder.mCabinNumber.setText("Cabin Number: " + faculty.getCabinNumber());
         holder.mLocation.setText("Location: "+faculty.getLocation());
 

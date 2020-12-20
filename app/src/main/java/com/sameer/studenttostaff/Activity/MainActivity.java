@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseReference mReference_Stu;
 
 
-    public Boolean Faculty = false;
-    public Boolean Student = false;
+    public static Boolean Faculty = false;
+    public static Boolean Student = false;
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
